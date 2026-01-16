@@ -1,0 +1,96 @@
+/* Larger Views CSS - temples-large.css */
+
+@media only screen and (min-width: 640px) {
+    
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    nav a {
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+    }
+
+    nav a:hover {
+        background-color: var(--secondary-color);
+        padding-left: 1.5rem;
+    }
+
+    nav a.active {
+        background-color: var(--accent-color);
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    figure img {
+        height: 280px;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    header {
+        padding: 2rem 3rem;
+    }
+
+    header h2 {
+        font-size: 2.25rem;
+    }
+
+    nav a {
+        padding: 0.875rem 1.75rem;
+        font-size: 1.05rem;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        padding: 0 3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    figure img {
+        height: 300px;
+    }
+
+    figcaption {
+        font-size: 1.15rem;
+        padding: 1.5rem;
+    }
+}

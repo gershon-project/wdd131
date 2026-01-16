@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Gershon Arthur</title>
+    <meta name="description" content="A beautiful collection of LDS temples from around the world showcasing sacred architecture and spiritual landmarks.">
+    <meta name="author" content="Gershon Arthur">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sacred Temples Around the World</h1>
+        
+        <figure data-year="1893" data-size="large">
+            <img src="images/temple.jpg" alt="Salt Lake Temple in Utah with beautiful architecture" width="400" height="250" loading="lazy">
+            <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+
+        <figure data-year="1877" data-size="large">
+            <img src="images/temple.jpg" width="400" height="250" loading="lazy">
+            <figcaption>St. George Temple</figcaption>
+        </figure>
+
+        <figure data-year="2000" data-size="small">
+            <img src="images/temple.jpg" alt="Boston Temple surrounded by trees" width="400" height="250" loading="lazy">
+            <figcaption>Boston Temple</figcaption>
+        </figure>
+
+        <figure data-year="2004" data-size="small">
+            <img src="images/temple.jpg" width="400" height="250" loading="lazy">
+            <figcaption>Manhattan Temple</figcaption>
+        </figure>
+
+        <figure data-year="1888" data-size="large">
+            <img src="images/temple.jpg" alt="Manti Temple on hillside in Utah" width="400" height="250" loading="lazy">
+            <figcaption>Manti Temple</figcaption>
+        </figure>
+
+        <figure data-year="2016" data-size="small">
+            <img src="images/temple.jpg" width="400" height="250" loading="lazy">
+            <figcaption>Provo City Center Temple</figcaption>
+        </figure>
+
+        <figure data-year="2019" data-size="large">
+            <img src="images/temple.jpg" alt="Rome Italy Temple with beautiful gardens" width="400" height="250" loading="lazy">
+            <figcaption>Rome Italy Temple</figcaption>
+        </figure>
+
+        <figure data-year="1919" data-size="large">
+            <img src="images/temple.jpg" alt="Laie Hawaii Temple by the ocean" width="400" height="250" loading="lazy">
+            <figcaption>Laie Hawaii Temple</figcaption>
+        </figure>
+
+        <figure data-year="2018" data-size="small">
+            <img src="images/temple.jpg" width="400" height="250" loading="lazy">
+            <figcaption>Concepción Chile Temple</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Gershon Arthur - Central Region, Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
